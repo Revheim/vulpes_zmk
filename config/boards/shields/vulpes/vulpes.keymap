@@ -13,21 +13,24 @@
         // Tap Dances for Nordic Characters
         td_aring: td_aring {
             compatible = "zmk,behavior-tap-dance";
+            label = "TD_ARING";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp COMMA>, <&kp LBRC>; // å
+            bindings = <&kp COMMA>, <&kp LBRC>;
         };
         td_oelig: td_oelig {
             compatible = "zmk,behavior-tap-dance";
+            label = "TD_OSLASH";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp DOT>, <&kp SCLN>; // ø
+            bindings = <&kp DOT>, <&kp SCLN>;
         };
         td_aelig: td_aelig {
             compatible = "zmk,behavior-tap-dance";
+            label = "TD_AE";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp SLASH>, <&kp QUOT>; // æ
+            bindings = <&kp SLASH>, <&kp QUOT>;
         };
     };
 };
