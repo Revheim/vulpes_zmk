@@ -1,5 +1,0 @@
-config SHIELD_VULPES_LEFT
-    def_bool $(shields_list_contains,vulpes_left)
-
-config SHIELD_VULPES_RIGHT
-    def_bool $(shields_list_contains,vulpes_right)
