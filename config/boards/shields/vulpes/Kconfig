@@ -1,1 +1,1 @@
-source "config/boards/shields/vulpes/Kconfig.shield"
+source "boards/shields/vulpes/Kconfig.shield"
