@@ -7,7 +7,7 @@
             tapping-term-ms = <180>;
             quick-tap-ms = <50>;
             flavor = "balanced";
-            bindings = <&kp>, <&kp>;
+            bindings = <1 &kp>, <2 &kp>;
         };
 
         // Tap Dances for Nordic Characters
@@ -16,21 +16,21 @@
             label = "TD_ARING";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp COMMA>, <&kp LBRC>;
+            bindings = <1 &kp COMMA>, <2 &kp LBRC>;
         };
         td_oelig: td_oelig {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_OSLASH";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp DOT>, <&kp SCLN>;
+            bindings = <1 &kp DOT>, <2 &kp SCLN>;
         };
         td_aelig: td_aelig {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_AE";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp SLASH>, <&kp QUOT>;
+            bindings = <1 &kp SLASH>, <2 &kp QUOT>;
         };
     };
 };
