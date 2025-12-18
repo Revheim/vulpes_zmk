@@ -1,3 +1,8 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
+
 / {
     behaviors {
         // Home Row Modifiers
@@ -7,7 +12,7 @@
             tapping-term-ms = <180>;
             quick-tap-ms = <50>;
             flavor = "balanced";
-            bindings = <1 &kp>, <2 &kp>;
+            bindings = <&kp>, <&kp>;
         };
 
         // Tap Dances for Nordic Characters
@@ -16,21 +21,23 @@
             label = "TD_ARING";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <1 &kp COMMA>, <2 &kp LBRC>;
+            bindings = <&kp COMMA>, <&kp LBRC>;
         };
-        td_oelig: td_oelig {
+ 
+        td_aae: td_aae {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_OSLASH";
+            label = "TD_AAE";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <1 &kp DOT>, <2 &kp SCLN>;
+            bindings = <&kp DOT>, <&kp SEMI>;
         };
-        td_aelig: td_aelig {
+
+        td_oo: td_oo {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_AE";
+            label = "TD_OO";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <1 &kp SLASH>, <2 &kp QUOT>;
+            bindings = <&kp FSLH>, <&kp SQT>;
         };
     };
 };
