@@ -155,13 +155,13 @@
             >;
         };
 
-        numnav_layer {
-            bindings = <
-&kp N1       &kp N2       &kp N3       &kp N4       &kp EQUAL    &trans       &trans       &kp VOL_UP   &kp STOP     &kp PLAY     &kp NEXT     &kp PREV
-&kp N5       &kp N6       &kp N7       &kp N8       &kp RBRC     &trans       &trans       &kp MUTE     &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT
-&kp LS(EQUAL) &kp N9      &kp N0       &kp MINUS    &kp BSLH     &trans       &trans       &kp VOL_DN   &kp HOME     &none        &kp END      &none
-            >;
-        };
+//         numnav_layer {
+//             bindings = <
+// &kp N1       &kp N2       &kp N3       &kp N4       &kp EQUAL    &trans       &trans       &kp VOL_UP   &kp STOP     &kp PLAY     &kp NEXT     &kp PREV
+// &kp N5       &kp N6       &kp N7       &kp N8       &kp RBRC     &trans       &trans       &kp MUTE     &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT
+// &kp LS(EQUAL) &kp N9      &kp N0       &kp MINUS    &kp BSLH     &trans       &trans       &kp VOL_DN   &kp HOME     &none        &kp END      &none
+//             >;
+//         };
 //
 //         mousedesk_layer {
 //             bindings = <
