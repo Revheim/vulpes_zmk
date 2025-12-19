@@ -5,9 +5,9 @@
 };
 
 &kscan0 {
-    // compatible = "zmk,kscan-gpio";
-    // label = "KSCAN";
-    // diode-direction = "col2row";
+    compatible = "zmk,kscan-gpio";
+    label = "KSCAN";
+    diode-direction = "col2row";
 
     rows-gpios
         = <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // P0_31
