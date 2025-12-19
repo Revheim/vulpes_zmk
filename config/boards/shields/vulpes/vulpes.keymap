@@ -44,9 +44,9 @@
     combos {
         compatible = "zmk,combos";
         timeout-ms = <50>;
-        combo_grave { key-positions = <0 12>; bindings = <&kp GRAVE>; layers = <0>; };
-        combo_lpar  { key-positions = <3 4>; bindings = <&kp LPAR>; layers = <0>; };
-        combo_rpar  { key-positions = <7 8>; bindings = <&kp RPAR>; layers = <0>; };
+        combo_grave { key-positions = <0 12>;  bindings = <&kp GRAVE>; layers = <0>; };
+        combo_lpar  { key-positions = <3 4>;   bindings = <&kp LPAR>; layers = <0>; };
+        combo_rpar  { key-positions = <7 8>;   bindings = <&kp RPAR>; layers = <0>; };
         combo_lbrc  { key-positions = <15 16>; bindings = <&kp LBRC>; layers = <0>; };
         combo_rbrc  { key-positions = <19 20>; bindings = <&kp RBRC>; layers = <0>; };
         combo_lbkt  { key-positions = <27 28>; bindings = <&kp LBKT>; layers = <0>; };
@@ -54,23 +54,23 @@
         combo_tilde { key-positions = <11 23>; bindings = <&kp TILDE>; layers = <0>; };
         combo_lt    { key-positions = <14 15>; bindings = <&kp LT>; layers = <0>; };
         combo_gt    { key-positions = <20 21>; bindings = <&kp GT>; layers = <0>; };
-        combo_star  { key-positions = <8 9>; bindings = <&kp STAR>; layers = <0>; };
-        combo_qmark { key-positions = <3 15>; bindings = <&kp QMARK>; layers = <0>; };
+        combo_star  { key-positions = <8 9>;   bindings = <&kp STAR>; layers = <0>; };
+        combo_qmark { key-positions = <3 15>;  bindings = <&kp QMARK>; layers = <0>; };
         combo_dqt   { key-positions = <15 27>; bindings = <&kp DQT>; layers = <0>; };
         combo_equal { key-positions = <32 33>; bindings = <&kp EQUAL>; layers = <0>; };
         combo_slash { key-positions = <25 26>; bindings = <&kp SLASH>; layers = <0>; };
         combo_bslh  { key-positions = <33 34>; bindings = <&kp BSLH>; layers = <0>; };
         combo_dllr  { key-positions = <26 27>; bindings = <&kp DLLR>; layers = <0>; };
         combo_at    { key-positions = <12 25>; bindings = <&kp AT>; layers = <0>; };
-        combo_excl  { key-positions = <8 20>; bindings = <&kp EXCL>; layers = <0>; };
+        combo_excl  { key-positions = <8 20>;  bindings = <&kp EXCL>; layers = <0>; };
         combo_sqt   { key-positions = <20 32>; bindings = <&kp SQT>; layers = <0>; };
         combo_plus  { key-positions = <23 35>; bindings = <&kp PLUS>; layers = <0>; };
-        combo_hash  { key-positions = <2 3>; bindings = <&kp HASH>; layers = <0>; };
-        combo_ampr  { key-positions = <1 2>; bindings = <&kp AMPS>; layers = <0>; };
+        combo_hash  { key-positions = <2 3>;   bindings = <&kp HASH>; layers = <0>; };
+        combo_ampr  { key-positions = <1 2>;   bindings = <&kp AMPS>; layers = <0>; };
         combo_l3    { key-positions = <17 18>; bindings = <&mo 3>; layers = <0>; };
-        combo_save  { key-positions = <2 14>; bindings = <&kp LA(S)>; layers = <0>; };
-        combo_b     { key-positions = <1 13>; bindings = <&kp B>; layers = <0>; };
-        combo_j     { key-positions = <9 21>; bindings = <&kp J>; layers = <0>; };
+        combo_save  { key-positions = <2 14>;  bindings = <&kp LA(S)>; layers = <0>; };
+        combo_b     { key-positions = <1 13>;  bindings = <&kp B>; layers = <0>; };
+        combo_j     { key-positions = <9 21>;  bindings = <&kp J>; layers = <0>; };
         combo_k     { key-positions = <10 22>; bindings = <&kp K>; layers = <0>; };
     };
 
@@ -149,42 +149,62 @@
 
         colemak_layer {
             bindings = <
-&kp Q        &kp W        &kp F        &kp P        &kp B        &kp ESC      &mt RALT TAB &kp J        &kp L        &kp U        &kp Y        &alt_tab
-&hm LSHFT A  &hm LCTRL R  &hm LALT S   &hm LGUI T   &kp G        &lt 2 DEL    &lt 1 BSPC   &kp M        &hm LGUI N   &hm LALT E   &hm LCTRL I  &hm LSHFT O
-&kp V        &kp X        &kp C        &kp D        &kp Z        &kp SPACE    &kp ENTER    &kp K        &kp H        &td_ar       &td_oe       &td_ae
+// &kp Q        &kp W        &kp F        &kp P        &kp B        &kp ESC      &mt RALT TAB &kp J        &kp L        &kp U        &kp Y        &alt_tab
+// &hm LSHFT A  &hm LCTRL R  &hm LALT S   &hm LGUI T   &kp G        &lt 2 DEL    &lt 1 BSPC   &kp M        &hm LGUI N   &hm LALT E   &hm LCTRL I  &hm LSHFT O
+// &kp V        &kp X        &kp C        &kp D        &kp Z        &kp SPACE    &kp ENTER    &kp K        &kp H        &td_ar       &td_oe       &td_ae
+        &kp Q        &kp W        &kp F        &kp P        &kp B                                        &kp J        &kp L        &kp U        &kp Y        &alt_tab
+&kp V   &hm LSHFT A  &hm LCTRL R  &hm LALT S   &hm LGUI T   &kp G                                        &kp M        &hm LGUI N   &hm LALT E   &hm LCTRL I  &hm LSHFT O   &td_ae
+                     &kp X        &kp C        &kp D        &kp Z                                        &kp K        &kp H        &td_ar       &td_oe       
+                                               &kp ESC      &lt 2 DEL   &kp SPACE         &mt RALT TAB   &lt 1 BSPC   &kp ENTER
             >;
         };
 
-//         numnav_layer {
-//             bindings = <
+        numnav_layer {
+            bindings = <
 // &kp N1       &kp N2       &kp N3       &kp N4       &kp EQUAL    &trans       &trans       &kp VOL_UP   &kp STOP     &kp PLAY     &kp NEXT     &kp PREV
 // &kp N5       &kp N6       &kp N7       &kp N8       &kp RBRC     &trans       &trans       &kp MUTE     &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT
 // &kp LS(EQUAL) &kp N9      &kp N0       &kp MINUS    &kp BSLH     &trans       &trans       &kp VOL_DN   &kp HOME     &none        &kp END      &none
-//             >;
-//         };
-//
-//         mousedesk_layer {
-//             bindings = <
+              &kp N1       &kp N2       &kp N3       &kp N4       &kp EQUAL                              &kp VOL_UP   &kp STOP     &kp PLAY     &kp NEXT     &kp PREV
+&kp LS(EQUAL) &kp N5       &kp N6       &kp N7       &kp N8       &kp RBRC                               &kp MUTE     &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT   &none
+                           &kp N9       &kp N0       &kp MINUS    &kp BSLH                               &kp VOL_DN   &kp HOME     &none        &kp END      
+                                                     &trans       &trans      &trans            &trans   &trans       &trans
+            >;
+        };
+
+        mousedesk_layer {
+            bindings = <
 // &mo 3        &none        &none        &none        &none        &trans       &trans       &none        &none        &none        &none        &trans
 // &kp K_BACK   &none        &none        &none        &none        &kp K_FWD    &trans       &m_win_left  &m_win_down  &m_win_up    &m_win_right &to 4
 // &kp PSCRN    &none        &none        &none        &none        &trans       &trans       &m_dt_left   &m_dt_win_left &m_dt_win_right &m_dt_right &to 0
-//             >;
-//         };
-//
-//         npadfunc_layer {
-//             bindings = <
+             &mo 4        &none        &none        &none        &none                                   &none        &none          &none           &none        &trans
+&kp PSCRN    &kp K_BACK   &none        &none        &none        &kp K_FWD                               &m_win_left  &m_win_down    &m_win_up       &m_win_right &to 4    &to 0
+                          &none        &none        &none        &none                                   &m_dt_left   &m_dt_win_left &m_dt_win_right &m_dt_right
+                                                    &trans       &trans      &trans             &trans   &trans       &trans
+            >;
+        };
+
+        npadfunc_layer {
+            bindings = <
 // &kp KP_N1    &kp KP_N2    &kp KP_N3    &kp KP_N4    &none        &trans       &trans       &kp F1       &kp F2       &kp F3       &kp F4       &sys_reset
 // &kp KP_N5    &kp KP_N6    &kp KP_N7    &kp KP_N8    &none        &trans       &trans       &kp F5       &kp F6       &kp F7       &kp F8       &none
 // &none        &kp KP_N9    &kp KP_N0    &kp NUM      &none        &trans       &trans       &kp F9       &kp F10      &kp F11      &kp F12      &bootloader
-//             >;
-//         };
-//
-//         fo4_layer {
-//             bindings = <
+        &kp KP_N1    &kp KP_N2    &kp KP_N3    &kp KP_N4    &none                                        &kp F1       &kp F2       &kp F3       &kp F4       &sys_reset
+&none   &kp KP_N5    &kp KP_N6    &kp KP_N7    &kp KP_N8    &none                                        &kp F5       &kp F6       &kp F7       &kp F8       &none       &bootloader
+                     &kp KP_N9    &kp KP_N0    &kp NUM      &none                                        &kp F9       &kp F10      &kp F11      &kp F12      
+                                               &trans       &trans      &trans                  &trans   &trans       &trans
+            >;
+        };
+
+        fo4_layer {
+            bindings = <
 // &kp TAB      &kp Q        &kp W        &kp E        &kp R        &kp F9       &m_fo_ulck   &m_fo_dis    &none        &none        &none        &none
 // &kp LCTRL    &kp A        &kp S        &kp D        &kp T        &kp F5       &m_fo_tgm    &m_fo_tcl    &none        &none        &none        &kp GRAVE
 // &kp LSHFT    &kp N1       &kp N2       &kp N3       &kp N4       &kp SPACE    &kp V        &kp M        &none        &none        &none        &to 0
-//             >;
-//         };
+            &kp TAB      &kp Q        &kp W        &kp E        &kp R                                    &m_fo_ulck   &m_fo_dis    &none        &none        &none
+&kp LSHFT   &kp LCTRL    &kp A        &kp S        &kp D        &kp T                                    &m_fo_tgm    &m_fo_tcl    &none        &none        &kp GRAVE  &to 0
+                         &kp N1       &kp N2       &kp N3       &kp N4                                   &kp V        &kp M        &none        &none        
+                                                   &kp F9       &kp F5    &kp SPACE           &trans     &trans       &trans
+            >;
+        };
     };
 };
