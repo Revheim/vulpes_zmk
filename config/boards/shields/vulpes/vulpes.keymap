@@ -154,5 +154,37 @@
 &kp V        &kp X        &kp C        &kp D        &kp Z        &kp SPACE    &kp ENTER    &kp K        &kp H        &td_ar       &td_oe       &td_ae
             >;
         };
+
+        numnav_layer {
+            bindings = <
+&kp N1       &kp N2       &kp N3       &kp N4       &kp EQUAL    &trans       &trans       &kp VOL_UP   &kp STOP     &kp PLAY     &kp NEXT     &kp PREV
+&kp N5       &kp N6       &kp N7       &kp N8       &kp RBRC     &trans       &trans       &kp MUTE     &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT
+&kp LS(EQUAL) &kp N9      &kp N0       &kp MINUS    &kp BSLH     &trans       &trans       &kp VOL_DN   &kp HOME     &none        &kp END      &none
+            >;
+        };
+//
+//         mousedesk_layer {
+//             bindings = <
+// &mo 3        &none        &none        &none        &none        &trans       &trans       &none        &none        &none        &none        &trans
+// &kp K_BACK   &none        &none        &none        &none        &kp K_FWD    &trans       &m_win_left  &m_win_down  &m_win_up    &m_win_right &to 4
+// &kp PSCRN    &none        &none        &none        &none        &trans       &trans       &m_dt_left   &m_dt_win_left &m_dt_win_right &m_dt_right &to 0
+//             >;
+//         };
+//
+//         npadfunc_layer {
+//             bindings = <
+// &kp KP_N1    &kp KP_N2    &kp KP_N3    &kp KP_N4    &none        &trans       &trans       &kp F1       &kp F2       &kp F3       &kp F4       &sys_reset
+// &kp KP_N5    &kp KP_N6    &kp KP_N7    &kp KP_N8    &none        &trans       &trans       &kp F5       &kp F6       &kp F7       &kp F8       &none
+// &none        &kp KP_N9    &kp KP_N0    &kp NUM      &none        &trans       &trans       &kp F9       &kp F10      &kp F11      &kp F12      &bootloader
+//             >;
+//         };
+//
+//         fo4_layer {
+//             bindings = <
+// &kp TAB      &kp Q        &kp W        &kp E        &kp R        &kp F9       &m_fo_ulck   &m_fo_dis    &none        &none        &none        &none
+// &kp LCTRL    &kp A        &kp S        &kp D        &kp T        &kp F5       &m_fo_tgm    &m_fo_tcl    &none        &none        &none        &kp GRAVE
+// &kp LSHFT    &kp N1       &kp N2       &kp N3       &kp N4       &kp SPACE    &kp V        &kp M        &none        &none        &none        &to 0
+//             >;
+//         };
     };
 };
