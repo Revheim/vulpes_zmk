@@ -191,20 +191,20 @@
 //         &kp KP_N1    &kp KP_N2    &kp KP_N3    &kp KP_N4    &none                                        &kp F1       &kp F2       &kp F3       &kp F4       &sys_reset
 // &none   &kp KP_N5    &kp KP_N6    &kp KP_N7    &kp KP_N8    &none                                        &kp F5       &kp F6       &kp F7       &kp F8       &none       &bootloader
 //                      &kp KP_N9    &kp KP_N0    &kp NUM      &none                                        &kp F9       &kp F10      &kp F11      &kp F12      
-                                               &trans       &trans        &trans                  &trans   &trans       &trans
-            >;
-        };
-
-        fo4_layer {
-            bindings = <
-// &kp TAB      &kp Q        &kp W        &kp E        &kp R        &kp F9       &m_fo_ulck   &m_fo_dis    &none        &none        &none        &none
-// &kp LCTRL    &kp A        &kp S        &kp D        &kp T        &kp F5       &m_fo_tgm    &m_fo_tcl    &none        &none        &none        &kp GRAVE
-// &kp LSHFT    &kp N1       &kp N2       &kp N3       &kp N4       &kp SPACE    &kp V        &kp M        &none        &none        &none        &to 0
-            &kp TAB      &kp Q        &kp W        &kp E        &kp R                                    &m_fo_ulck   &m_fo_dis    &none        &none        &none
-&kp LSHFT   &kp LCTRL    &kp A        &kp S        &kp D        &kp T                                    &m_fo_tgm    &m_fo_tcl    &none        &none        &kp GRAVE  &to 0
-                         &kp N1       &kp N2       &kp N3       &kp N4                                   &kp V        &kp M        &none        &none        
-                                                   &kp F9       &kp F5    &kp SPACE           &trans     &trans       &trans
-            >;
-        };
+//                                                &trans       &trans        &trans                  &trans   &trans       &trans
+//             >;
+//         };
+//
+//         fo4_layer {
+//             bindings = <
+// // &kp TAB      &kp Q        &kp W        &kp E        &kp R        &kp F9       &m_fo_ulck   &m_fo_dis    &none        &none        &none        &none
+// // &kp LCTRL    &kp A        &kp S        &kp D        &kp T        &kp F5       &m_fo_tgm    &m_fo_tcl    &none        &none        &none        &kp GRAVE
+// // &kp LSHFT    &kp N1       &kp N2       &kp N3       &kp N4       &kp SPACE    &kp V        &kp M        &none        &none        &none        &to 0
+//             &kp TAB      &kp Q        &kp W        &kp E        &kp R                                    &m_fo_ulck   &m_fo_dis    &none        &none        &none
+// &kp LSHFT   &kp LCTRL    &kp A        &kp S        &kp D        &kp T                                    &m_fo_tgm    &m_fo_tcl    &none        &none        &kp GRAVE  &to 0
+//                          &kp N1       &kp N2       &kp N3       &kp N4                                   &kp V        &kp M        &none        &none        
+//                                                    &kp F9       &kp F5    &kp SPACE           &trans     &trans       &trans
+//             >;
+//         };
     };
 };
